@@ -2,11 +2,111 @@
 <html lang="pt-BR">
 <head>
 <link rel="icon" type="image/png" href="assets/logo-mari-beaute.png?v=2">
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Produtos | Mari Beauté</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <style>:root{--i:#302522;--m:#776863;--p:#f5f1eb;--c:#fffdfa;--g:#ab8a5e;--l:#30252221}*{box-sizing:border-box}body{margin:0;background:var(--p);color:var(--i);font-family:"DM Sans",sans-serif}.wrap{max-width:1180px;margin:auto;padding:0 32px}a{color:inherit;text-decoration:none}header{padding:24px 0;display:flex;justify-content:space-between;border-bottom:1px solid var(--l)}.brand{font:27px "Playfair Display",serif;letter-spacing:-.04em}.brand i,.eyebrow,.number{color:var(--g)}.back,.eyebrow,.number{font-size:10px;letter-spacing:.17em;text-transform:uppercase}.hero{padding:76px 0 48px}.hero h1{font:500 clamp(52px,8vw,96px)/.92 "Playfair Display",serif;letter-spacing:-.07em;margin:14px 0 20px}.hero h1 em{font-weight:400}.hero p{max-width:525px;color:var(--m);font-size:15px;line-height:1.7}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding-bottom:86px}.card{min-height:255px;padding:24px;background:var(--c);border:1px solid var(--l);display:flex;flex-direction:column;transition:.3s}.card:hover{transform:translateY(-5px);box-shadow:0 18px 35px #37281e17}.number{font-weight:600}.card h2{font:500 35px/1 "Playfair Display",serif;letter-spacing:-.05em;margin:15px 0 9px}.card p{color:var(--m);font-size:13px;line-height:1.55;margin:0}.card b{margin-top:auto;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--g);padding-top:24px}.soon{opacity:.55;pointer-events:none}footer{background:var(--i);color:#f8f1e8;padding:30px 0}footer span{font:20px "Playfair Display",serif}@media(max-width:720px){.wrap{padding:0 20px}.hero{padding:55px 0 38px}.grid{grid-template-columns:1fr}.card{min-height:210px}}</style>
+<style>
+  .card{position:relative;overflow:hidden;isolation:isolate}.card>*:not(.art){position:relative;z-index:2}.art{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.9;transition:transform .55s cubic-bezier(.2,.7,.2,1)}.card:hover .art{transform:scale(1.04)}
+  .base-card{background:#bca18d;color:#fffaf4}.base-card .number,.base-card b{color:#fffaf4}.base-card:before{content:"";position:absolute;z-index:0;inset:0;background:linear-gradient(130deg,transparent 43%,rgba(89,56,44,.28) 43.5% 58%,transparent 58.5%)}.base-art:before{content:"";position:absolute;width:32%;height:55%;right:14%;top:16%;border-radius:7px 7px 12px 12px;background:#9a6a58;box-shadow:inset 0 0 0 1px #f4deca55}.base-art:after{content:"";position:absolute;width:24%;height:13%;right:18%;top:9%;border-radius:4px 4px 0 0;background:#553a31}
+  .tint-card{background:#e9ded1}.tint-art:before{content:"";position:absolute;width:46%;height:46%;right:12%;top:13%;border:2px solid #b18f74;border-radius:50% 50% 52% 48%;box-shadow:inset 0 0 0 20px #fff9f1aa}.tint-art:after{content:"";position:absolute;right:28%;top:25%;width:15%;height:15%;border-radius:50% 50% 55% 45%;background:#d2a383}
+  .concealer-card{background:#705046;color:#fff9f4}.concealer-card .number,.concealer-card b{color:#fff9f4}.concealer-art:before{content:"";position:absolute;width:18%;height:67%;right:22%;top:12%;border-radius:12px;background:#d9a587;transform:rotate(29deg);box-shadow:inset 0 0 0 1px #fff5ea66}.concealer-art:after{content:"";position:absolute;width:14%;height:21%;right:15%;top:49%;border-radius:50%;background:#f1c7aa}
+  .powder-card{background:#d9c9b5}.powder-art:before{content:"";position:absolute;width:56%;aspect-ratio:1;right:8%;top:13%;border-radius:50%;border:2px solid #806351;box-shadow:inset 0 0 0 18px #f7eddf,inset 0 0 0 20px #b99378}.powder-art:after{content:"";position:absolute;width:21%;aspect-ratio:1;right:26%;top:31%;border-radius:50%;background:#f8f1e8}
+  .contour-card{background:#3c2c26;color:#fff9f4}.contour-card .number,.contour-card b{color:#e3c99b}.contour-art:before{content:"";position:absolute;width:68%;height:42%;right:-5%;top:18%;border:2px solid #a9795b;border-radius:50%;box-shadow:0 0 0 18px #3c2c26,0 0 0 20px #76513d}.contour-art:after{content:"";position:absolute;width:23%;height:9%;right:23%;top:34%;background:#c28d68;border-radius:50%}
+  .blush-card{background:#c89c8c}.blush-art:before{content:"";position:absolute;width:42%;aspect-ratio:1;right:15%;top:12%;border-radius:50%;background:#b86568;box-shadow:0 0 0 17px #f5d6d0aa}.blush-art:after{content:"";position:absolute;width:17%;aspect-ratio:1;right:9%;top:54%;border-radius:50%;background:#d98d83}
+  .palette-card{background:#e8dbcd}.palette-art{right:10%;left:auto;top:13%;bottom:auto;width:53%;height:50%;display:grid;grid-template-columns:repeat(4,1fr);gap:7px;transform:rotate(-8deg)}.palette-art i{background:#8c6259;border-radius:3px;box-shadow:inset 0 0 0 1px #fff3e233}.palette-art i:nth-child(2),.palette-art i:nth-child(7){background:#d8ab7c}.palette-art i:nth-child(3),.palette-art i:nth-child(6){background:#b77a71}.palette-art i:nth-child(4),.palette-art i:nth-child(8){background:#573b35}
+  .finalizer-card{background:#f3e8da}.compact-card{background:#a98576;color:#fff9f4}.compact-card .number,.compact-card b{color:#fff9f4}.finalizer-card .art:before,.compact-card .art:before{content:"";position:absolute;width:52%;aspect-ratio:1;right:14%;top:16%;border:2px solid #a67e64;border-radius:50%;box-shadow:inset 0 0 0 16px #fffaf3}.compact-card .art:before{border-color:#f0d5bf;box-shadow:inset 0 0 0 17px #cc9d83}.finalizer-card .art:after,.compact-card .art:after{content:"";position:absolute;width:18%;aspect-ratio:1;right:31%;top:33%;border-radius:50%;background:#d7a688}.compact-card .art:after{background:#f0c2a7}@media(max-width:720px){.base-art:before{right:11%}.palette-art{width:44%;right:11%}.card{min-height:250px}}
+</style>
 </head>
-<body><div class="wrap"><header><a class="brand" href="index.html">Mari <i>Beauté</i></a><a class="back" href="index.html#maquiagem">← Voltar à Maquiagem</a></header><main><section class="hero"><div class="eyebrow">Acervo pessoal · Maquiagem</div><h1>Meus<br><em>Produtos.</em></h1><p>Uma curadoria em evolução de fórmulas, tons e ferramentas para cada etapa da sua maquiagem.</p></section><section class="grid"><a class="card" href="produtos-base.html"><span class="number">01 · Pele</span><h2>Bases</h2><p>Suas fórmulas de cobertura e acabamento natural.</p><b>Ver produtos →</b></a><a class="card" href="produtos-skin-tint.html"><span class="number">02 · Pele</span><h2>Skin Tints</h2><p>Texturas leves para uniformizar com frescor.</p><b>Ver produtos →</b></a><a class="card" href="produtos-corretivo.html"><span class="number">03 · Pele</span><h2>Corretivos</h2><p>Opções para iluminar e corrigir com precisão.</p><b>Ver produtos →</b></a><a class="card" href="produtos-setting-powder.html"><span class="number">04 · Pele</span><h2>Setting Powders</h2><p>Pós soltos para selar e manter o acabamento.</p><b>Ver produtos →</b></a><a class="card" href="produtos-contorno.html"><span class="number">05 · Cor</span><h2>Contorno</h2><p>Estrutura e dimensão com naturalidade.</p><b>Ver produtos →</b></a><a class="card" href="produtos-blush.html"><span class="number">06 · Cor</span><h2>Blushes</h2><p>Fórmulas em pó e líquidas, com suas cores favoritas.</p><b>Ver produtos →</b></a><a class="card" href="paletas-sombra.html"><span class="number">07 · Olhos</span><h2>Paletas de sombra</h2><p>Cores, acabamentos, aplicação e pincéis.</p><b>Ver produtos →</b></a><div class="card soon"><span class="number">08 · Em breve</span><h2>Pós finalizadores</h2><p>Uma nova categoria em preparação.</p><b>Em breve</b></div><div class="card soon"><span class="number">09 · Em breve</span><h2>Pós compactos</h2><p>Uma nova categoria em preparação.</p><b>Em breve</b></div></section></main></div><footer><div class="wrap"><span>Seu acervo, à sua maneira.</span></div></footer></body>
+<body>
+<div class="wrap">
+<header>
+<a class="brand" href="index.html">Mari <i>Beauté</i>
+</a>
+<a class="back" href="index.html#maquiagem">← Voltar à Maquiagem</a>
+</header>
+<main>
+<section class="hero">
+<div class="eyebrow">Acervo pessoal · Maquiagem</div>
+<h1>Meus<br>
+<em>Produtos.</em>
+</h1>
+<p>Uma curadoria em evolução de fórmulas, tons e ferramentas para cada etapa da sua maquiagem.</p>
+</section>
+<section class="grid">
+<a class="card base-card" href="produtos-base.html">
+<span class="art base-art" aria-hidden="true"></span>
+<span class="number">01 · Pele</span>
+<h2>Bases</h2>
+<p>Suas fórmulas de cobertura e acabamento natural.</p>
+<b>Ver produtos →</b>
+</a>
+<a class="card tint-card" href="produtos-skin-tint.html">
+<span class="art tint-art" aria-hidden="true"></span>
+<span class="number">02 · Pele</span>
+<h2>Skin Tints</h2>
+<p>Texturas leves para uniformizar com frescor.</p>
+<b>Ver produtos →</b>
+</a>
+<a class="card concealer-card" href="produtos-corretivo.html">
+<span class="art concealer-art" aria-hidden="true"></span>
+<span class="number">03 · Pele</span>
+<h2>Corretivos</h2>
+<p>Opções para iluminar e corrigir com precisão.</p>
+<b>Ver produtos →</b>
+</a>
+<a class="card powder-card" href="produtos-setting-powder.html">
+<span class="art powder-art" aria-hidden="true"></span>
+<span class="number">04 · Pele</span>
+<h2>Setting Powders</h2>
+<p>Pós soltos para selar e manter o acabamento.</p>
+<b>Ver produtos →</b>
+</a>
+<a class="card contour-card" href="produtos-contorno.html">
+<span class="art contour-art" aria-hidden="true"></span>
+<span class="number">05 · Cor</span>
+<h2>Contorno</h2>
+<p>Estrutura e dimensão com naturalidade.</p>
+<b>Ver produtos →</b>
+</a>
+<a class="card blush-card" href="produtos-blush.html">
+<span class="art blush-art" aria-hidden="true"></span>
+<span class="number">06 · Cor</span>
+<h2>Blushes</h2>
+<p>Fórmulas em pó e líquidas, com suas cores favoritas.</p>
+<b>Ver produtos →</b>
+</a>
+<a class="card palette-card" href="paletas-sombra.html">
+<span class="art palette-art" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+<span class="number">07 · Olhos</span>
+<h2>Paletas de sombra</h2>
+<p>Cores, acabamentos, aplicação e pincéis.</p>
+<b>Ver produtos →</b>
+</a>
+<div class="card finalizer-card soon">
+<span class="art" aria-hidden="true"></span>
+<span class="number">08 · Em breve</span>
+<h2>Pós finalizadores</h2>
+<p>Uma nova categoria em preparação.</p>
+<b>Em breve</b>
+</div>
+<div class="card compact-card soon">
+<span class="art" aria-hidden="true"></span>
+<span class="number">09 · Em breve</span>
+<h2>Pós compactos</h2>
+<p>Uma nova categoria em preparação.</p>
+<b>Em breve</b>
+</div>
+</section>
+</main>
+</div>
+<footer>
+<div class="wrap">
+<span>Seu acervo, à sua maneira.</span>
+</div>
+</footer>
+</body>
 </html>
